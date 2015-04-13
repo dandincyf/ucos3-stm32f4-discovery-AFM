@@ -62,7 +62,7 @@ pid_adc_config()
 	ADC_InitStructure.ADC_NbrOfConversion = 1;
 	ADC_Init(PID_INPUT_ADC_s, &ADC_InitStructure);
 	ADC_RegularChannelConfig(PID_INPUT_ADC_s, PID_INPUT_PORT_CHANNEL, 1, ADC_SampleTime_144Cycles);
-//	ADC_ITConfig(PID_INPUT_ADC_s, ADC_IT_EOC, ENABLE);
+
 	ADC_Cmd(PID_INPUT_ADC_s, ENABLE);
 	ADC_SoftwareStartConv(PID_INPUT_ADC_s);
 }
