@@ -1,12 +1,4 @@
-/*
- * General Atomic Force Microscope (AFM) - Head of Communication
- * =============================================================
- * Date: 11 June 2014
- * Author: Liwen Zhang
- * Email: Scott.zhangliwen@gmail.com/chadkidzhang@126.com
- * =============================================================
- * 璇ュご鏂囦欢瀹氫箟浜咥FM涓婁笅浣嶆満浜や簰閫氫俊鎺ュ彛銆�
- */
+
 
 #include "stm32f4xx.h"
 
@@ -31,7 +23,7 @@
 #define COMM_BOARD_EXCUTOR_LIST_SIZE 	20
 
 void comm_init();
-//void comm_cmd_send(short data, int cmd_word, int cmd_head);
+
 
 
 void comm_IC_send(unsigned char data);
