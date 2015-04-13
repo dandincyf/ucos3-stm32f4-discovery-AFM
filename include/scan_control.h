@@ -1,9 +1,4 @@
-/*
- * scan_control.h
- *
- *  Created on: 2014年6月17日
- *      Author: baby
- */
+
 
 #ifndef SCAN_CONTROL
 #define SCAN_CONTROL
@@ -32,4 +27,4 @@ extern void set_inc(uint32_t inc_x,uint32_t inc_y);
 extern void set_x(uint16_t value);
 extern void set_y(uint16_t value);
 
-#endif /* SCAN_CONTROL_H_ */
+#endif
