@@ -1,12 +1,4 @@
-/*
- * General Atomic Force Microscope (AFM) - Header of DDS
- * ===========================================================
- * Date: 11 June 2014
- * Co-Author: Liwen Zhang
- * Email: Scott.zhangliwen@gmail.com/chadkidzhang@126.com
- * ===========================================================
- * 该头文件定义了AFM中DDS接口
- */
+
 
 #include "stm32f4xx.h"
 
