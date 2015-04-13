@@ -17,17 +17,15 @@
 
 
 
-/*-----------------Debug-----------------*/
+
 
 #define DEBUG_FREQUENCY_TASK
 #define DEBUG_RECIVECMD
 
 #define DEBUG_ADC
-//#define TEST_CASE1_ADC
 
-//#define USART_SEND_TEST
 #define ENDING_WRONG
 
-/*---------------------------------------*/
+
 
 #endif
