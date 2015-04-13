@@ -110,7 +110,3 @@ short motor_continue_check()
 	return MOTOR_GOON;
 }
 
-//short motor_getorigin()
-//{
-//	return motor_origin_point;
-//}
