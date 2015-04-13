@@ -25,9 +25,7 @@ void motor_auto_forward()
 	{
 		motor_step_forward(MOTOR_SINGLE_STEP);
 	}
-	/*
-	 * need informations
-	 */
+	
 }
 
 void motor_auto_backward()
@@ -36,9 +34,7 @@ void motor_auto_backward()
 	{
 		motor_step_backward(MOTOR_SINGLE_STEP);
 	}
-	/*
-	 * need informations
-	 */
+	
 }
 
 void motor_step_forward(int step)
@@ -72,9 +68,7 @@ void motor_step_backward(int step)
 void motor_origin_set()
 {
 	motor_origin_point=0;
-	/*
-	 * need informations
-	 */
+	
 }
 
 
@@ -89,9 +83,7 @@ void motor_originate()
 		motor_step_forward(motor_origin_point);
 	}
 	motor_origin_set();
-	/*
-	 * need informations
-	 */
+	
 }
 
 void motor_stop()
