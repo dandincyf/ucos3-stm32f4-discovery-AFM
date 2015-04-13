@@ -40,9 +40,7 @@ void comm_IC_init()
     USART_ITConfig(COMM_USART_s, USART_IT_RXNE, ENABLE);
     NVIC_EnableIRQ(USART2_IRQn);
 
-    /*
-     * USART between boards
-     */
+
 
 	RCC_APB1PeriphClockCmd(COMM_BOARD_USART, ENABLE);
 	RCC_AHB1PeriphClockCmd(COMM_BOARD_USART_PORT, ENABLE);
@@ -118,43 +116,5 @@ USART2_IRQHandler(void)
 	}
 }
 
-//void
-//USART3_IRQHandler(void)
-//{
-//	if (USART_GetITStatus(COMM_BOARD_USART_s, USART_IT_RXNE) != RESET)
-//	{
-//		unsigned char c = USART_ReceiveData(COMM_BOARD_USART_s);
-//		rxbuff_board[rxbuff_count_board]=c;
-//		rxbuff_count_board++;
-//		if ((rxbuff_count_board%2)==0)
-//		{
-//			unsigned char temp;
-//			temp = rxbuff_board[rxbuff_count_board-1];
-//			rxbuff_board[rxbuff_count_board-1]=rxbuff_board[rxbuff_count_board-2];
-//			rxbuff_board[rxbuff_count_board-2]=temp;
-//		}
-//		if (rxbuff_count_board == 8)
-//		{
-//			USART_ITConfig(COMM_BOARD_USART_s, USART_IT_RXNE, DISABLE);
-//			module_msg_dispatch((CMD_STRU*)rxbuff_board);
-//			rxbuff_count_board = 0;
-//			USART_ITConfig(COMM_BOARD_USART_s, USART_IT_RXNE, ENABLE);
-//		}
-//	}
-//}
-//
-//void comm_board_IC_send(unsigned char data)
-//{
-//	while(USART_GetFlagStatus(COMM_BOARD_USART_s, USART_FLAG_TXE)==RESET);
-//	USART_SendData(COMM_BOARD_USART_s, data);
-//}
-//
-//void comm_board_IC_array_send(unsigned char* data, int len)
-//{
-//	int i=0;
-//	while (i<len)
-//	{
-//		comm_board_IC_send(*(data+i));
-//		i++;
-//	}
-//}
+
+
