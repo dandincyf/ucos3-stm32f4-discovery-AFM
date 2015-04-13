@@ -10,7 +10,7 @@ void task_led_blink(void *p_arg)
 
 	RCC_AHB1PeriphClockCmd(BLINK_RCC_BIT, ENABLE);
 	GPIO_InitTypeDef GPIO_InitStructure;
-	  /* Configure pin in output push/pull mode */
+	
 	GPIO_InitStructure.GPIO_Pin = (1 << BLINK_PIN);
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
 	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
