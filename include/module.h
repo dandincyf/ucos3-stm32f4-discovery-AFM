@@ -1,11 +1,4 @@
-/*
- * General Atomic Force Microscope (AFM) - Modules Definitions
- * ===========================================================
- * Date: 09 June 2014
- * Author: Liwen Zhang
- * Email: Scott.zhangliwen@gmail.com/chadkidzhang@126.com
- * ===========================================================
- */
+
 
 #include "includes.h"
 #include "stm32f4xx.h"
@@ -24,10 +17,7 @@
 #define MODULE_MAX_TASKS						1
 #define MODULE_MSG_LEN							6
 
-/*
- * Modules Description Structure
- * =============================
- */
+
 struct module_stru
 {
 	unsigned short module_head;
@@ -37,10 +27,7 @@ struct module_stru
 	unsigned char priors[MODULE_MAX_TASKS];
 };
 
-/*
- * Module commands/data Description Structure
- * ==========================================
- */
+
 
 typedef struct msg_stru
 {
@@ -70,22 +57,13 @@ typedef struct data_stru
 } DATA_STRU;
 
 
-/*
- * Modules Description List
- * ========================
- */
+
 struct module_stru modules_list[MODULE_MAX_MODULES];
 
-/*
- * Interfaces Provides to OS
- * =========================
- */
-//OS Call
+
 void module_init();
 void module_task_init();
-//unsigned char module_check();
 
-//Modules Call
 void module_msg_dispatch(CMD_STRU *msg);
 void module_addtolist(struct module_stru temp, unsigned short head);
 void module_msg_render(MSG_STRU *msg,
