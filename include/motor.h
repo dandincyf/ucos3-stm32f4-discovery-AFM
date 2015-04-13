@@ -1,11 +1,4 @@
-/*
- * General Atomic Force Microscope (AFM) - Header of Motor
- * ===========================================================
- * Date: 09 June 2014
- * Co-Author: Liwen Zhang
- * Email: Scott.zhangliwen@gmail.com/chadkidzhang@126.com
- * ===========================================================
- */
+
 #ifndef MOTOR
 #define MOTOR
 
