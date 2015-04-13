@@ -146,10 +146,9 @@ task_pid_set(void *p_arg)
 			dispatch_flag = 1;
 			break;
 		case MOD_PID_CMD_MOTOR_STOP:
-//			if (pid_setpoint == pid_z)
+
 			{
-//				pid_render(data, MOD_COMM_HEAD, (MOD_COMM_TASK_SEND <<8)+ MOD_COMM_CMD_BOARD_SEND_INT,
-//						(MOD_MOTOR_TASK_MOVE<<8) + MOD_MOTOR_CMD_STOP, msg_send);
+
 				msg_send[4] = MOD_MOTOR_HEAD;
 				dispatch_flag = 1;
 			}
