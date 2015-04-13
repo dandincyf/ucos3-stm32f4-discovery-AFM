@@ -1,12 +1,4 @@
-/*
- * General Atomic Force Microscope (AFM) - Module of DDS
- * ===============================================================
- * Date: 11 June 2014
- * Author: Liwen Zhang
- * Email: Scott.zhangliwen@gmail.com/chadkidzhang@126.com
- * ===============================================================
- * 该头文件定义了DDS模块相关接口
- */
+
 
 #include "module.h"
 #include "dds.h"
