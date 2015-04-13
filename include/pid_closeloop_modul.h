@@ -1,12 +1,4 @@
-/*
- * General Atomic Force Microscope (AFM) - Module of PID Closeloop
- * ===============================================================
- * Date: 11 June 2014
- * Author: Liwen Zhang
- * Email: Scott.zhangliwen@gmail.com/chadkidzhang@126.com
- * ===============================================================
- * 璇ュご鏂囦欢瀹氫箟浜哖ID鎺у埗闂幆鐨勭浉鍏虫帴鍙�
- */
+
 
 #include "module.h"
 #include "pid_clooseloop.h"
