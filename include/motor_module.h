@@ -7,7 +7,7 @@
 #define MOD_MOTOR_HEAD						0x0002
 
 #define MOD_MOTOR_TASK_MOVE									0x00
-//-----------------------------------------------------------------------------------
+
 #define MOD_MOTOR_CMD_SET_ORIGIN						0x00
 #define MOD_MOTOR_CMD_AUTO_FORWARD			0x01
 #define MOD_MOTOR_CMD_AUTO_BACKWARD			0x02
@@ -19,19 +19,15 @@
 #define MOD_MOTOR_STATUS_BACKWARD					0X00
 #define MOD_MOTOR_STATUS_MOVING						0X01
 #define MOD_MOTOR_STATUS_STOPPING					0X00
-//***********************************************
+
 
 
 #define MOD_MOTOR_TASK_STOP									0X01
-//-----------------------------------------------------------------------------------
+
 #define MOD_MOTOR_CMD_STOP									0X00
 
 
-//***********************************************
-/*
- * Send From AFM
- * =============
- */
+
 #define MOD_MOTOR_REPORT_STEPS				0x00
 #define MOD_MOTOR_REPORT_STOP				0x01
 #define MOD_MOTOR_REPORT_ORIGINATE			0x02
@@ -46,10 +42,7 @@ static CPU_STK Motor_Move_Stk[256];
 static OS_TCB Motor_Stop_TCB;
 static CPU_STK Motor_Stop_Stk[64];
 
-/*
- * Move Task of Motor
- * ==================
- */
+
 void task_motor_move(void *p_arg);
 void task_motor_stop(void *p_arg);
 
